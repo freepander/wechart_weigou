@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<package name="basePackage" namespace="/" extends="struts-default">
+	</package>
+	<!--   微微狗微信入口   -->
+	<package name="wechart" namespace="/wechart" extends="struts-default">
+		<action name="weigou_*" class="weigouAction" method="{1}">
+		</action>
+
+	</package>
+	
+</struts>
+	
